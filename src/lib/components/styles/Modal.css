@@ -1,0 +1,33 @@
+.modal-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+    position: absolute;
+    background-color:cornflowerblue;
+    border-radius: 5px;
+    width: 500px;
+    padding-inline: 1rem;
+}
+
+.modal-close {
+    position: absolute;
+    margin: 0;
+    top: -5px;
+    right: -5px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    border-style: none;
+    cursor: pointer;
+}
