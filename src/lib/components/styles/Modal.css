@@ -14,10 +14,22 @@
 
 .modal {
     position: absolute;
-    background-color:cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1e847f;
+    height: 100px;
+    width:20%;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
     border-radius: 5px;
-    width: 500px;
     padding-inline: 1rem;
+
 }
 
 .modal-close {

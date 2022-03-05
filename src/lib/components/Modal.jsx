@@ -1,19 +1,24 @@
+import React from 'react';
+import { useEffect } from 'react';
 import './styles/Modal.css'
 
+const Modal = (props) => {
 
-const Modal = ({isOpen, setIsOpen}) => {
+    const handleModal = () => props.setIsOpen(false)
 
-    const handleModal = () => setIsOpen(false)
+    useEffect(() => {
+        setTimeout(props.setIsOpen(false), 2000)
+    }, [])
 
     return (
         <>
-            {isOpen && (
+            {/* {props.isOpen && ( */}
                 <div className='modal-bg'>
                     <div className="modal">
-                            <p>Employee Created!</p><button className="modal-close" onClick={handleModal}>X</button>
+                            <p>Employee Created !</p><button className="modal-close" onClick={handleModal}>X</button>
                     </div>
                 </div>
-            )}
+            {/* )} */}
         </>
     )
 };
