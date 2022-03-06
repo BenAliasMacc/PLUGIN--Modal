@@ -7,7 +7,7 @@ const Modal = (props) => {
     const handleModal = () => props.setIsOpen(false)
 
     useEffect(() => {
-        setTimeout(handleModal(), 2000)
+        setTimeout(handleModal, 2000)
     }, [])
 
     return (
