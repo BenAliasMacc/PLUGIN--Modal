@@ -7,18 +7,18 @@ const Modal = (props) => {
     const handleModal = () => props.setIsOpen(false)
 
     useEffect(() => {
-        setTimeout(props.setIsOpen(false), 2000)
+        setTimeout(handleModal(), 2000)
     }, [])
 
     return (
         <>
-            {/* {props.isOpen && ( */}
+            {props.isOpen && (
                 <div className='modal-bg'>
                     <div className="modal">
                             <p>Employee Created !</p><button className="modal-close" onClick={handleModal}>X</button>
                     </div>
                 </div>
-            {/* )} */}
+            )}
         </>
     )
 };
